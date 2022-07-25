@@ -2,12 +2,12 @@ from re import search
 
 
 class Node:
-    def _init_(self,data):
+    def __init__(self,data):
         self.data = data
         self.ref = None
     
 class Stack:
-    def _init_(self):
+    def __init__(self):
         self.head = None
 
 
@@ -35,7 +35,7 @@ class Stack:
 
 class Queue:
 
-    def _init_(self):
+    def __init__(self):
         self.front = None
         self.back = None
     
@@ -93,5 +93,5 @@ q.enqueue(1)
 q.enqueue(4)
 q.enqueue(6)
 # q.dequeue()
-q.queuesearch()
-# q.queue()
+# q.queuesearch()
+q.queue()
